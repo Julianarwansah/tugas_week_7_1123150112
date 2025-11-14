@@ -74,19 +74,22 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    family: roboto
+  - family: Roboto
     fonts:
-      - asset: assets/fonts/Roboto-Regular.ttf
-      - asset: assets/fonts/Roboto-Medium.ttf
+      - asset: assets/fonts/roboto/Roboto_Condensed-Bold.ttf
+      - asset: assets/fonts/roboto/Roboto_Condensed-Italic.ttf
         weight: 500
-      - asset: assets/fonts/Roboto-Bold.ttf
+      - asset: assets/fonts/roboto/Roboto_Condensed-Light.ttf
         weight: 700
-    style: italic
-    family: Trajan Pro
+
+  - family: Raleway
     fonts:
-      - asset: fonts/TrajanPro.ttf
-      - asset: fonts/TrajanPro_Bold.ttf
-    eight: 700
+      - asset: assets/fonts/raleway/Raleway-Italic.ttf
+      - asset: assets/fonts/raleway/Raleway-Light.ttf
+        weight: 500
+      - asset: assets/fonts/raleway/Raleway-Thin.ttf
+        weight: 700
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
