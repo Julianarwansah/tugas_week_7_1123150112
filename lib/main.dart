@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'pages/sparate_list_view.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,30 +11,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Custom Fonts',
-      theme: ThemeData(
-        fontFamily: 'Raleway',
-      ),
-      home: const MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      home: const HomePage(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Custom Fonts'),
-      ),
-      body: const Center(
-        child: Text(
-          'Roboto Mono sample',
-          style: TextStyle(fontFamily: 'Roboto'),
-        ),
-      ),
+      body: const SparateListView(),
     );
   }
 }
