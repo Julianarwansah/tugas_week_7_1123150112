@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/sparate_list_view.dart';
+//import 'pages/sparate_list_view.dart';
+import 'pages/list_view_sparate_horizontal.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const SparateListView(),
+      body: const ListViewSparateHorizontal(),
     );
   }
 }
